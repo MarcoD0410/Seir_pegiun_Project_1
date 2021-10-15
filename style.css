@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADING */
+
+
+h1 {
+    text-align: center;
+    color: turquoise;
+    height: 70px;
+    font-size: 60px;
+    
+}
+
+
+
+
+
+
+/* QUESTION */
+
+#question {
+    width: 70%;
+    padding: 30px;
+    border: 3px solid turquoise;
+    background-color: black;
+    font-size: 20px;
+    margin: 10px auto;
+    color: turquoise;
+    font-weight: bolder;
+    font-size: 25px;
+    
+}
+
+/* Answers */
+
+#answer {
+    width: 50%;
+    margin: 10px auto;
+    color: turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fade 5s alternate;
+    border: 3px solid turquoise;
+}
+
+
+@keyframes fade{
+    0%{ opacity: 0;}
+}
+
+
+ #answer ul {
+   display: flex;
+   flex-direction: column;
+     width: 100%;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     list-style: none;
+     padding: 0 300px 0 300px;
+    
+ }
+
+
+
+ #answer ul li {
+     width: 40%;
+     height: 50px;
+     background-color: black ;
+     padding-top: 15px;
+     margin: 5px;
+     text-align: center;
+     font-weight: bolder;
+     font-size: 15px;
+     border: 3px solid turquoise ;
+     
+ }
+
+ #answer ul li:hover {
+   box-shadow: red;
+   color: red;
+ }
+
+ /* SCOREBOARD  */
+
+ #scores {
+     display: flex;
+     width: 50%;
+     background: black;
+     justify-content: center;
+     margin: 10px auto;
+     margin-top: 200px;
+     border: 3px solid turquoise;
+ }
+
+ #player1 {
+     width: 40%;
+     background-color: red;
+     color: black;
+     margin: 15px;
+     text-align: center;
+     font-weight: bolder;
+     border: 3px solid;
+ }
+
+ #player2 {
+    width: 40%;
+    background-color: blue;
+    color: black;
+    margin: 15px;
+    text-align: center;
+    font-weight: bolder;
+    border: 3px solid;
+ }
+
+body {
+    background: url(https://static.parade.com/wp-content/uploads/2021/03/SPORTS-TRIVIA-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: monospace;
+}
+ 
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    background-color: turquoise;
+    border: 3px solid black;
+}
+
+button:hover {
+    color: red;
+}
+
+
+
+.container {
+    border: 3px solid yellow;
+    height: 400px;
+    width: 100px;
+}
+
+@media screen and (max-width: 760px){
+    #answer{
+        width: 80%;
+        display: flex;
+        padding: 0 100px 0 100px;
+    }
+    #answer ul {
+        padding: 0 300px 0 300px;
+    }
+    #answer ul li {
+        min-width: 20rem;
+    }
+    body {
+        background: url(https://static.parade.com/wp-content/uploads/2021/03/SPORTS-TRIVIA-1.jpg);
+        background-size: 100%;
+        background-repeat: repeat;
+
+       
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body {
+        background: url(https://static.parade.com/wp-content/uploads/2021/03/SPORTS-TRIVIA-1.jpg);
+        background-size: 100%;
+    }
+    #answer {
+        min-width: 25px;
+    }
+    #answer ul li {
+        min-width: 20rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    body {
+        background: url(https://static.parade.com/wp-content/uploads/2021/03/SPORTS-TRIVIA-1.jpg);
+        background-size: 100%;
+    }
+    #answer {
+        min-width: 25px;
+    }
+    #answer ul li {
+        min-width: 20rem;
+    }
+}
